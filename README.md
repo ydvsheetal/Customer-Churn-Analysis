@@ -6,3 +6,6 @@ In this repository, I have taken a dataset of a telecom company and performed th
 [For Model Building, please refer to: Churn Analysis - Model Building.ipynb](https://github.com/ydvsheetal/Customer-Churn-Analysis/blob/main/Churn%20Analysis%20-%20Model%20Building.ipynb)
 
 [For Model Deployment, please refer to app.py](https://github.com/ydvsheetal/Customer-Churn-Analysis/blob/main/app.py)
+
+Creating the flask API
+
