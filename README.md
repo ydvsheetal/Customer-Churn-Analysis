@@ -67,3 +67,7 @@ Below message in Python shell is seen, which indicates that our App is now hoste
 
 HERE'S HOW OUR FRONTEND LOOKS LIKE:
 ![Customer Retention](https://github.com/ydvsheetal/Customer-Churn-Analysis/blob/main/model.png)
+
+
+Practical Usage:
+Any company based on various parameters of customers which I used in my model can find out which are their loyal customers and which are churners. Different parameters have different impact on the churning of customers, so a company can find which parameters they can improve so that they don't give a chance to their customers to churn and stands in the market.
