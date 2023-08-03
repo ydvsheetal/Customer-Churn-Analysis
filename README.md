@@ -2,10 +2,28 @@
 In this repository, I have taken a dataset of a telecom company and performed the end to end Exploratory Data Analysis, and identified the characteristics of the customers that are more likely to churn, and I have used them wisely to create a model by applying different models, and lately, have deployed the model.
 
 [For EDA, please refer to: Churn Analysis - EDA.ipynb](https://github.com/ydvsheetal/Customer-Churn-Analysis/blob/main/Churn%20Analysis%20-%20EDA.ipynb)
+Derived insights from EDA:
+HIGH Churn seen in case of Month to month contracts, No online security, No Tech support, First year of subscription and Fibre Optics Internet
+LOW Churn is seens in case of Long term contracts, Subscriptions without internet service and The customers engaged for 5+ years
+Factors like Gender, Availability of PhoneService and # of multiple lines have alomost NO impact on Churn
+Electronic check medium are the highest churners
+Contract Type - Monthly customers are more likely to churn because of no contract terms, as they are free to go customers.
+No Online security, No Tech Support category are high churners
+Non senior Citizens are high churners
 
 [For Model Building, please refer to: Churn Analysis - Model Building.ipynb](https://github.com/ydvsheetal/Customer-Churn-Analysis/blob/main/Churn%20Analysis%20-%20Model%20Building.ipynb)
 
+Conclusion from modeling:
+Firstly, I applied logistic regression but the accuracy it gives is 77-78% which is very low as the data is imbalanced(73:27 ratio).
+Secondly, I tried the random forest classifier model but the accuracy in this case is nearly 80% which is again very low.
+The main reason for getting this low accuracy is data imbalances.
+In order, to overcome this problem I have used SMOTE(Smote+EEN) library to upsampling the data.
+Then I again tried Logistic regression and the results far soo good that we get before. This time the accuracy is 93%.
+Then I applied Random Forest Classifier and the accuracy in this case is highest(96%). Then I finalize this model as my final model and saves this model using pickle.
 [For Model Deployment, please refer to app.py](https://github.com/ydvsheetal/Customer-Churn-Analysis/blob/main/app.py)
+Imported the saved model.
+Takes input from the user and makes my dataset the same as the dataset which I passed during training.
+Created the flask API.
 
 Creating the flask API
 
